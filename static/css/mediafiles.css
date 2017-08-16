@@ -1,0 +1,27 @@
+.page-header {
+background-color:green;
+margin-top: 0 !important;
+padding: 20px 20px 20px 40px;
+}
+.page-footer, footer{
+background-color:green;
+margin-top: 20px; /*space between content and footer*/
+padding: 20px 20px 20px 20px;
+color: hotpink;
+min-width: 100%;
+max-width: 100%;
+}
+
+/*removes the bullets on the lists*/
+li{
+  list-style: none;
+  display: inline;
+  font-size: 50pt;
+  /*space between the lists*/
+    padding: 20px;
+  }
+
+  a,h1{
+  	font-family: 'Lobster', cursive;
+  	color: hotpink !important; 
+  }

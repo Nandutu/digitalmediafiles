@@ -1,0 +1,21 @@
+{% extends "mediapp/base.html" %}
+{% load staticfiles %}
+{% block digitalmediacontent %}
+
+<div class="row">
+  {% for photo in photos %}
+     <div class=" col-md-3 ">
+      <div class="thumbnail">
+      {% if photo.image %}
+       <div> <img src='{{ photo.image.url }}' 
+        class='img-responsive' style="width: 300px; height: 300px"  /></div>
+               {% endif %}
+               <div class="caption">
+              <h1><a href ='{{ photo.get_absolute_url }}'><a/> {{photo.caption}} </h1>
+             </div>
+             </div>
+            </div>
+         {%endfor%}
+       </div>
+
+{%endblock%}
